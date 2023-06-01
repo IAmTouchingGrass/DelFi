@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DelFi - Discover The Food!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="db.js" defer></script>
+    <script src="script.js" defer></script>
+    <style>
+        body{
+            transition: .45s ease-in;
+            background-color: rgb(247, 255, 177);
+            /* background-color: rgb(212, 255, 177); */
+        }
+    </style>
+</head>
+<body onload="getNumber()">
+    <header>
+        <h1 class="logo"><a href="landpage.html">DelFi</a> </h1>
+        <ul class="nav">
+            <li><a href="landpage.html">HOME</a></li>
+            <li><a href="selection.html">DISHES</a></li>
+            <li><a href="">ABOUT</a></li>
+        </ul>
+    </header>
+
+    <div class="food-container-2">
+        <div class="dish-nav"> 
+            <div class="dish-info-selection" id="select-desc" onclick="changeDesc(1)"></div>
+            <div class="dish-info-selection" id="select-hist" onclick="changeDesc(2)"></div>
+        </div>
+        <div class="container-dish">
+            <div class="dish-info">
+                <!-- <h1 class="dish-title">WAHAHAH</h1> -->
+                <img src="img/food1.jpg" alt="food" id="image">
+                <!-- <div class="desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Sed ipsum iusto non officia maiores maxime unde voluptatum voluptates fugiat adipisci suscipit, perspiciatis culpa, eum tenetur! Facere veritatis provident blanditiis nemo.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita totam eaque quasi modi consequatur tenetur et voluptas! Dignissimos cum, repellat molestiae eveniet illo ratione omnis veritatis fugiat nihil laudantium beatae!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum molestiae aliquid consequatur reprehenderit quos est esse reiciendis ipsam mollitia quae a, ipsum maxime saepe sit! Ipsam, delectus? Autem, debitis tempora.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic necessitatibus atque, fugit deleniti veritatis officiis, possimus id, natus nemo veniam aspernatur doloribus neque dicta suscipit repellat delectus culpa unde quaerat?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum reiciendis, eveniet et nisi atque distinctio amet cumque dolorum enim earum rem error ipsam architecto maiores nobis mollitia tenetur. Ipsam, a.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe magni in cumque repudiandae quam sequi temporibus esse eum sint deleniti nesciunt eius id sit, vel perspiciatis ex commodi. Dolorum, veniam. 
+                </div> -->
+            </div> 
+        </div>    
+    </div>
+
+    <div class="footer">
+        <div class="qmark" id="info-btn" onclick = "displayInfo()"><h1>?</h1></div>
+        <div class="info" id="info-disp">
+            <div class="footer-content">
+                <h2 class="logo">DelFi</h2>
+                <p>By: John Philip Barnachia</p>
+            </div>
+            <div class="foooter-content">
+                <h2>CONTACTS</h2>
+                <ul class="contacts">
+                    <li>Email</li>
+                    <li>Facebook</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h2>ABOUT</h2>
+                <p class="about-desc">DelFi provides the compilation
+                    of popular Filipino dishes and how to cook them!
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

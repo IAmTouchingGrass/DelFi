@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    color: aliceblue;
+    background-color: rgb(253, 237, 206);
+    width: 100%;
+}
+
+section{
+    width: 100%;
+}
+
+header{
+    height: 3%;
+    overflow: clip;
+    background-color: rgb(204, 109, 109);
+    height: 50px;
+    padding: 0 2%;
+}   
+
+p{
+    text-align: start;
+}
+
+.logo{
+    padding-left: 1.8vw;
+    padding-right: 1.8vw;
+    margin-left: 1vw;
+    float: left;
+    margin-top: 1vh;
+}
+
+.nav{
+    font-weight: bold;
+    float: right;
+    margin-top: 2.5vh;
+}
+
+.nav li{
+    display: inline-block;
+    list-style: none;
+}
+
+.nav li a{
+    padding: 20px 30px;
+}
+
+.nav a:hover{
+    background-color: rgb(197, 89, 89)
+}
+
+
+#slideshow{
+    background: url(img/food1.jpg);
+    background-repeat: no-repeat;
+    height: 92vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row-reverse; 
+    background-color: rgb(201, 194, 194); 
+    opacity: 90%;
+}
+
+.explore{
+   align-items: center;
+   align-self: center;
+   padding-right: 3%;
+   font-size: 4vw;
+   width: 26%;
+   text-shadow: 2px 2px #0000002f;
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.explore, .explore a{
+    color: rgb(253, 229, 195);
+    transition: .5s;
+}
+
+.explore:hover, a:hover{
+    padding-right: 4%;
+    color: rgb(253, 238, 218);
+    transition: .5s;
+}
+
+.qmark{
+    position: fixed;
+    border-radius: 100px;
+    background-color: rgb(245, 148, 29);
+    padding: 17px 26px;
+    top: 87vh;
+    left: 3%;
+    z-index: 1;
+    transition: 1s;
+    pointer-events: auto;     
+}
+
+.qmark:hover{
+    left: 3.25%;
+    background-color: rgb(245, 169, 76);;
+    color: rgb(255, 253, 252);
+    transition: 0.25;
+    cursor: pointer;
+}
+
+.info{
+    position: fixed;
+    background-color: rgb(204, 109, 109);
+    width: 100%;
+    /* height: 20%; */
+    height: 0%;
+    /* display: grid; */
+    opacity: 0;
+    grid-template-columns: auto auto auto;
+    padding: 3vw 0;
+    bottom: -20%;
+    justify-items: center;
+    gap: 0;   
+    transition: 1s;
+    overflow-y: hidden;
+    justify-content: space-evenly;
+}
+
+.footer-content{
+    padding: 0;
+    width: 28%;   
+    justify-content: center; 
+    margin-left: 4%;
+    justify-items: center;
+}
+
+.contacts li{
+    padding: 4%;
+}
+
+
+.info h2{
+    padding-bottom: 1.2vh;    
+}
+
+.contacts{
+    list-style: none;
+}
+
+.contacts li{
+    text-indent: -2.5em;
+}
+
+
+.food-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 5% 2%;
+    color: black;
+    border: black 1px solid;
+    border-radius: 10px;
+    padding: 3%;
+    box-sizing: border-box;
+    grid-auto-rows: auto 1fr;
+}
+
+.food{
+    position: relative;
+    width: 90%;
+    border: 2px solid black;
+    margin: 4%;
+    border-radius: 10px;
+    box-shadow: 5px 10px #a8a8a8;
+    height: 90%;
+    overflow-y: hidden;
+    align-content: end;
+    max-height: 30vh;
+    align-self: center;
+    align-items: flex-end;
+    background-color:  #7c7a7a;
+    background-position: center;
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+
+.food-info{
+    position: relative;
+    top: 19vh;
+    background-color: transparent;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+    transition: .45s;
+    bottom: 0;
+    overflow-y: hidden;
+    height: 30%;
+}
+
+.food-title{
+    position: relative;
+    font-weight: bold;
+    margin: 3% 0;
+    color: #f8f8f8;
+    text-shadow: 2px 2px #7271713d;
+}
+
+.food-desc{
+    position: relative;
+    overflow-y: hidden;
+    overflow-wrap: break-word;
+    transition: .55s;
+    text-overflow: ellipsis;
+    opacity: 0%;
+    height: 0%;
+}
+
+.food:hover{
+    cursor: pointer;
+}
+
+.food:hover .food-title{
+    color: black;
+}
+
+.food:hover .food-info{
+    transition: .40s;
+    top: 11.8vh;
+    height: 60%;
+}
+.food:hover .food-desc{
+    opacity: 100%;
+    height: 50%;
+}
+
+.food:hover .food-info{
+    background-color: #afaeae;
+}
+
+.food-container-2{
+    display: flex;
+    grid-template-columns: auto auto auto;
+    margin: 5% 2%;
+    color: black;
+    padding: 2%;
+    box-sizing: border-box;
+    grid-auto-rows: auto 1fr;
+    flex-direction: row;
+    box-shadow: 5px 10px 10px #888888;
+}
+
+.dish-nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.dish-info-selection{
+    border: 1px black solid;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    margin-bottom: 1px;
+    padding: .5vh 2vh;
+    font-size: 3vw;
+    background-color: aquamarine;
+    box-shadow: 20px 20px 50px #888888;
+}
+
+.dish-info-selection:hover{
+    cursor: pointer;
+    background-color: greenyellow;
+    transition: .45s;
+}
+
+#select-desc:after{
+    content: ' \2261';
+    padding-left: 1vh;
+}
+
+#select-hist:after{
+    content: ' \25F7';
+}
+
+.container-dish{
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 0 17px 17px 17px;
+    box-shadow: 5px 10px #888888;
+    background-color: aliceblue;
+}
+
+.desc{
+    position: relative;
+    margin: 2vh;
+    line-height: 5vh;
+}
+
+.container-dish img{
+    width: 30vw;
+    max-height: 20vw;
+    max-width: 50vw;
+    float: left;
+    margin: 3vh;
+}
+
+.dish-title{
+    text-align: center;
+    padding: 30px;
+}
+
+.dish-info{
+    display: inline;
+}
+
+.hist{
+    display: none;
+    position: relative;
+    margin: 2vh;
+    line-height: 5vh;
+}
+
+
+
+
+
+
